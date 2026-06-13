@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int sumOfDigits(int n) {
+    if (n == 0) {          // Base case
+        return 0;
+    }
+
+    return (n % 10) + sumOfDigits(n / 10);   // Recursive call
+}
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    cout << "Sum of digits = " << sumOfDigits(n);
+
+    return 0;
+}
