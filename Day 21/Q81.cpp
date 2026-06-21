@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char str[100];
+    int length = 0;
+
+    cout << "Enter a string: ";
+    cin.getline(str, 100);
+
+    // Calculate length without using strlen()
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    cout << "Length of the string = " << length << endl;
+
+    return 0;
+}
